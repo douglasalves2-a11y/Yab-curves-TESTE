@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — YAB Curves Moda Plus Size</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div id="nav_logo">
+            <img src="yab_logo_branco.png" alt="YAB Curves" width="100" height="60">
+        </div>
+        <ul>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html" class="active nav-cta">Contato</a></li>
+        </ul>
+        <div class="nav_spacer"></div>
+    </nav>
+
+    <main>
+
+        <div class="page-header">
+            <span class="label">✦ Fale com a gente</span>
+            <h1>Estamos aqui <em>para você</em></h1>
+            <p>Tire dúvidas, peça consultoria de moda ou entre em contato pelas nossas redes. Adoramos ouvir você!</p>
+        </div>
+
+        <!-- CANAIS -->
+        <div class="canais">
+            <a href="https://www.instagram.com/yabcurves/" class="canal-card" target="_blank">
+                <div class="canal-icon ig"><i class="fa-brands fa-instagram"></i></div>
+                <h3>Instagram</h3>
+                <p>Acompanhe nossas novidades, lançamentos e looks inspiradores direto no feed.</p>
+                <span class="canal-btn">@yabcurves</span>
+            </a>
+
+            <a href="https://www.facebook.com/share/1EVE8YNnXW/" class="canal-card" target="_blank">
+                <div class="canal-icon fb"><i class="fa-brands fa-facebook"></i></div>
+                <h3>Facebook</h3>
+                <p>Siga nossa página e fique por dentro de promoções e novidades da YAB Curves.</p>
+                <span class="canal-btn">Curtir página</span>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5535991159481" class="canal-card" target="_blank">
+                <div class="canal-icon wp"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3>WhatsApp</h3>
+                <p>Fale direto com a nossa equipe e receba atendimento personalizado na hora.</p>
+                <span class="canal-btn">Enviar mensagem</span>
+            </a>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <section class="form-section">
+            <div class="form-box">
+                <h2>Envie uma mensagem</h2>
+                <p class="sub">Responderemos em até 24 horas úteis.</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Assunto</label>
+                        <input type="text" name="assunto" placeholder="Ex: dúvida sobre tamanhos">
+                    </div>
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensagem <i class="fa-solid fa-paper-plane" style="margin-left:8px"></i></button>
+                </form>
+
+                <div class="sucesso" id="sucesso">
+                    ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div id="footer_logo">
+                    <img src="yab_logo_rosa.png.png" alt="Logo YAB" width="100" height="60">
+                </div>
+                <div id="footer_center">
+                    <ul class="footer-list">
+                        <li><a href="index.html">Inicial</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    <div id="footer_social_midia">
+                        <a href="https://www.instagram.com/yabcurves/" class="footer-link" id="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1EVE8YNnXW/" class="footer-link" id="facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5535991159481" class="footer-link" id="whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">&copy; 2026 &mdash; Todos os direitos reservados</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const sucesso = document.getElementById('sucesso');
+            sucesso.style.display = 'block';
+            this.reset();
+            setTimeout(() => sucesso.style.display = 'none', 5000);
+        });
+    </script>
+<script src="acessibilidade.js"></script>
+</body>
+</html>

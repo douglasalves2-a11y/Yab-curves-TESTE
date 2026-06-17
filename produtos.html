@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos — YAB Curves Moda Plus Size</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div id="nav_logo">
+           <img src="yab_logo_branco.png" alt="YAB Curves" width="100" height="60">
+        </div>
+        <ul>
+            <li><a href="index.html">Inicial</a></li>
+            <li><a href="produtos.html" class="active">Produtos</a></li>
+            <li><a href="sobre.html">Sobre Nós</a></li>
+            <li><a href="contato.html" class="">Contato</a></li>
+        </ul>
+        <div class="nav_spacer"></div>
+    </nav>
+
+    <main>
+
+        <!-- CABEÇALHO -->
+        <section class="page-header">
+            <span class="label">✦ Coleção atual</span>
+            <h1>Nossos Produtos</h1>
+            <p>Peças pensadas para realçar a sua elegância em todas as silhuetas</p>
+        </section>
+
+        <!-- FILTROS -->
+        <section class="filtros-wrapper">
+            <div class="filtros">
+                <button class="filtro-btn ativo" onclick="filtrar(this, 'todos')">Todos</button>
+                <button class="filtro-btn" onclick="filtrar(this, 'vestidos')">Vestidos</button>
+                <button class="filtro-btn" onclick="filtrar(this, 'blusas')">Blusas</button>
+                <button class="filtro-btn" onclick="filtrar(this, 'conjuntos')">Conjuntos</button>
+                <button class="filtro-btn" onclick="filtrar(this, 'calcas')">Calças</button>
+            </div>
+        </section>
+
+        <!-- GRADE DE PRODUTOS -->
+        <section class="produtos-grid" id="grade">
+
+            <!-- 01 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa01.jpg" alt="Cardigan Marrom Botões">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Blazer Azul</h4>
+                    <p>Poder e elegância em cada detalhe</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="produto-card" data-cat="calcas">
+                <div class="produto-img-wrap">
+                    <img src="roupa02.jpg" alt="Calças Couro Skinny">
+                </div>
+                <span class="badge badge-promo">Promoção</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Calças</span>
+                    <h4>Calça Couro Skinny</h4>
+                    <p>Disponível em marrom, caramelo e preto</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa03.jpg" alt="Conjunto Verde Militar">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Verde Militar</h4>
+                    <p>Jaqueta com zíper e mini saia combinando</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa04.jpg" alt="Conjunto Marsala Wide Leg">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Marsala Wide Leg</h4>
+                    <p>Sofisticação e conforto em harmonia</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 05 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa05.jpg" alt="Vestido Ombro Único Nude">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Ombro Único Nude</h4>
+                    <p>Sensualidade e leveza no look</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 06 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa06.jpg" alt="Conjunto Caramelo Cargo">
+                </div>
+                <span class="badge badge-promo">Promoção</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Caramelo Cargo</h4>
+                    <p>Estilo utilitário com muito charme</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 07 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa07.jpg" alt="Conjunto Couro Marrom">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Couro Marrom</h4>
+                    <p>Jaqueta cropped e mini saia couro</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 08 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa08.jpg" alt="Blusa Top e Saia Couro Caramelo">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Blusa Top + Saia Couro</h4>
+                    <p>Combinação atrevida e marcante</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 09 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa09.jpg" alt="Vestido Preto Oversized">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Preto Oversized</h4>
+                    <p>Atitude e conforto no dia a dia</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa10.jpg" alt="Conjunto Blusa e Saia Nude">
+                </div>
+                <span class="badge badge-promo">Promoção</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Blusa + Saia Nude</h4>
+                    <p>Elegância minimalista para qualquer ocasião</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="produto-card" data-cat="conjuntos">
+                <div class="produto-img-wrap">
+                    <img src="roupa11.jpg" alt="Conjunto Blazer Cinza e Saia">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Conjuntos</span>
+                    <h4>Conjunto Blazer Cinza + Saia</h4>
+                    <p>Estilo executivo com toque feminino</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa12.jpg" alt="Vestido Tricot Marrom">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Tricot Marrom</h4>
+                    <p>Aconchego e estilo para o inverno</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="produto-card" data-cat="blusas">
+                <div class="produto-img-wrap">
+                    <img src="roupa13.jpg" alt="Cardigan Marrom Botões">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Blusas</span>
+                    <h4>Cardigan Marrom Botões</h4>
+                    <p>Delicadeza e sofisticação nos detalhes</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa14.jpg" alt="Vestido Paetê Preto">
+                </div>
+                <span class="badge badge-novo">Novo</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Paetê Preto</h4>
+                    <p>Para os momentos mais especiais da sua vida</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa15.jpg" alt="Vestido Preto Plissado">
+                </div>
+                <span class="badge badge-promo">Promoção</span>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Vestido Preto Plissado</h4>
+                    <p>Movimento e leveza a cada passo</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="produto-card" data-cat="vestidos">
+                <div class="produto-img-wrap">
+                    <img src="roupa16.jpg" alt="Blazer Vestido Azul Marinho">
+                </div>
+                <div class="produto-info">
+                    <span class="card-categoria">Vestidos</span>
+                    <h4>Blazer Vestido Azul Marinho</h4>
+                    <p>Elegância clássica para todas as ocasiões</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-comprar">
+                        <i class="fa-brands fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- BANNER CTA -->
+        <section class="banner-cta">
+            <h2>"Não encontrou o que procurava?"</h2>
+            <p>Entre em contato com a gente pelo WhatsApp e veja todas as nossas peças disponíveis — atendimento personalizado para você.</p>
+            <a href="https://api.whatsapp.com/send?phone=5535991159481" target="_blank" class="btn-wpp">
+                <i class="fa-brands fa-whatsapp"></i> Falar com a YAB Curves
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div id="footer_logo">
+                    <img src="yab_logo_branco.png" alt="Logo YAB" width="100" height="60">
+                </div>
+                <div id="footer_center">
+                    <ul class="footer-list">
+                        <li><a href="index.html">Inicial</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    <div id="footer_social_midia">
+                        <a href="https://www.instagram.com/yabcurves/" class="footer-link" id="instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1EVE8YNnXW/" class="footer-link" id="facebook" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=5535991159481" class="footer-link" id="whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_copyright">&copy; 2026 &mdash; Todos os direitos reservados</div>
+        </div>
+    </footer>
+    <script src="acessibilidade.js"></script>
+
+    <script>
+        function filtrar(botao, categoria) {
+            document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('ativo'));
+            botao.classList.add('ativo');
+
+            const cards = document.querySelectorAll('.produto-card');
+            let visivel = 0;
+            cards.forEach(card => {
+                const show = categoria === 'todos' || card.dataset.cat === categoria;
+                card.style.display = show ? 'flex' : 'none';
+                if (show) {
+                    card.style.animationDelay = (visivel * 0.06) + 's';
+                    card.classList.remove('fade-in');
+                    void card.offsetWidth;
+                    card.classList.add('fade-in');
+                    visivel++;
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
