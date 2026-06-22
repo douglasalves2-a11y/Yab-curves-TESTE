@@ -286,7 +286,36 @@ body {
 }
 .produto-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
 
-.produto-img { width: 100%; height: 320px; object-fit: cover; display: block; }
+/* ── CORREÇÃO: aspect-ratio no lugar de height fixa ── */
+.produto-img-wrap {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    display: block;
+}
+
+.produto-img,
+.produto-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform .45s ease;
+}
+
+.produto-card:hover .produto-img,
+.produto-card:hover .produto-img-wrap img {
+    transform: scale(1.05);
+}
+
+.produto-placeholder {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: linear-gradient(135deg, var(--rosa-light) 0%, #fde9f5 100%);
+    display: flex; align-items: center; justify-content: center;
+}
+.produto-placeholder i { font-size: 3rem; color: var(--rosa); opacity: .4; }
 
 .produto-info { padding: 20px; }
 .produto-info h4 {
@@ -310,13 +339,6 @@ body {
     transition: gap .2s;
 }
 .produto-link:hover { gap: 10px; }
-
-.produto-placeholder {
-    width: 100%; height: 320px;
-    background: linear-gradient(135deg, var(--rosa-light) 0%, #fde9f5 100%);
-    display: flex; align-items: center; justify-content: center;
-}
-.produto-placeholder i { font-size: 3rem; color: var(--rosa); opacity: .4; }
 
 /* ══════════ BANNER SOBRE ══════════ */
 .banner-sobre {
@@ -433,6 +455,11 @@ footer { width: 100%; }
     .hero-tag.tag-1 { left: 10px; }
     .hero-tag.tag-2 { right: 10px; }
     .features { grid-template-columns: 1fr; }
+
+    .produtos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -444,4 +471,9 @@ footer { width: 100%; }
 @media (max-width: 480px) {
     .navbar li a { padding: 7px 9px; font-size: .82rem; }
     .hero-tag { display: none; }
+
+    .produtos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 14px;
+    }
 }
